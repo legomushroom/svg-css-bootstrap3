@@ -1,0 +1,32 @@
+@mixin icons_mixin($path: '')
+	.icon
+		width:  32px
+		height: 32px
+		fill: #ccc
+
+		&:hover
+			fill: #bbb
+			cursor:pointer
+
+		&:active
+			fill: #ccc
+			
+		&.is-check
+			fill: #FE4365
+
+		&.is-heart
+			clip-path: url($path + '#heart-path')
+
+		&.is-play
+			clip-path: url($path + '#play-path')
+			
+		&.is-pause
+			clip-path: url($path + '#pause-path')
+
+		&.is-inset-shadow g
+			filter: url($path + '#inset-shadow')
+
+		& rect
+			clip-path: inherit
+		& g
+			clip-path: inherit

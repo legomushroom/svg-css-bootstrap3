@@ -1,0 +1,30 @@
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #ccc;
+}
+.icon:hover {
+  fill: #bbb;
+  cursor: pointer;
+}
+.icon:active {
+  fill: #ccc;
+}
+.icon.is-check {
+  fill: #fe4365;
+}
+.icon rect {
+  clip-path: inherit;
+}
+.icon.is-inset-shadow {
+  filter: url("#inset-shadow");
+}
+.icon.is-heart {
+  clip-path: url("#heart-path");
+}
+.icon.is-play {
+  clip-path: url("#play-path");
+}
+.icon.is-pause {
+  clip-path: url("#pause-path");
+}

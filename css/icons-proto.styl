@@ -1,0 +1,30 @@
+icons_mixin(path='')
+	.icon
+		width  32px
+		height 32px
+		fill #ccc
+
+		&:hover
+			fill:#bbb
+			cursor:pointer	
+
+		&:active
+			fill:#ccc
+
+		&.is-check
+			fill:#FE4365
+
+		& rect
+			clip-path inherit
+
+		&.is-inset-shadow
+			filter: url(path + '#inset-shadow')
+
+		&.is-heart
+			clip-path:url(path + '#heart-path')
+
+		&.is-play
+			clip-path:url(path + '#play-path')
+
+		&.is-pause
+			clip-path:url(path + '#pause-path')

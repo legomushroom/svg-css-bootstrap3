@@ -1,0 +1,67 @@
+<svg>
+   <defs>          
+    <filter id='inset-shadow'>
+    
+     <!-- Shadow offset -->
+    <feOffset
+      dx='0'
+      dy='0'
+    />
+    
+    <!-- Shadow blur -->
+    <feGaussianBlur
+      stdDeviation='20'
+      result='offset-blur'
+    />
+    
+    <!-- Invert drop shadow to make an inset shadow-->
+    <feComposite
+      operator='out'
+      in='SourceGraphic'
+      in2='offset-blur'
+      result='inverse'
+    />
+    
+   <!-- Cut colour inside shadow -->
+    <feFlood
+      flood-color='black'
+      flood-opacity='.75'
+      result='color'
+    />
+      
+   <feComposite
+      operator='in'
+      in='color'
+      in2='inverse'
+      result='shadow'
+    />
+ 
+    
+   <!-- Placing shadow over element -->
+    <feComposite
+      operator='over'
+      in='shadow'
+      in2='SourceGraphic'
+    />
+      
+  </filter>
+
+
+
+     
+     <clipPath id="heart-path">                          
+
+      <path fill-rule="evenodd" clip-rule="evenodd"d="M256,512c0,0-256-144.938-256-311.694C0,29.22,240.62,10.145,256,192 c18.467-181.721,256-162.784,256,8.306C512,367.062,256,512,256,512z"/>      
+     </clipPath>         
+     
+     <clipPath id="play-path">                      
+      <polygon fill-rule="evenodd" clip-rule="evenodd" points="0,0 512,256 0,512 "/>   
+     </clipPath>   
+     
+     <clipPath id="pause-path">                          
+      <rect x="64" width="128" height="512"/>
+          <rect x="320" width="128" height="512"/>  
+     </clipPath>   
+     
+   </defs>
+</svg>

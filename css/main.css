@@ -1,0 +1,58 @@
+.icon{
+  width:32px;
+  height:32px;
+  fill:#ccc;
+}
+
+.icon.is-inset-shadow g{
+  filter: url('#inset-shadow');
+}
+
+.icon.is-heart rect{
+  clip-path:url('#heart-path');
+}
+
+.icon.is-play rect{
+  clip-path:url('#play-path');
+}
+
+.icon.is-pause rect{
+  clip-path:url('#pause-path');
+}
+
+
+.icon:hover{
+  fill:#bbb;
+  cursor:pointer;
+}
+
+.icon:active{
+  fill:#ccc;
+}
+
+.icon.is-check{
+  fill:#FE4365;
+}
+
+
+
+
+/* system styles */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: monospace;
+  background-color: #fff;
+  padding: 50px;
+}

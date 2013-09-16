@@ -13,12 +13,6 @@
 .icon.is-check {
   fill: #fe4365;
 }
-.icon rect {
-  clip-path: inherit;
-}
-.icon.is-inset-shadow {
-  filter: url("icons.svg#inset-shadow");
-}
 .icon.is-heart {
   clip-path: url("icons.svg#heart-path");
 }
@@ -27,4 +21,11 @@
 }
 .icon.is-pause {
   clip-path: url("icons.svg#pause-path");
+}
+.icon rect,
+.icon g {
+  clip-path: inherit;
+}
+.icon.is-inset-shadow g {
+  filter: url("icons.svg#inset-shadow");
 }

@@ -14,12 +14,6 @@ icons_mixin(path='')
 		&.is-check
 			fill:#FE4365
 
-		& rect
-			clip-path inherit
-
-		&.is-inset-shadow
-			filter: url(path + '#inset-shadow')
-
 		&.is-heart
 			clip-path:url(path + '#heart-path')
 
@@ -28,3 +22,9 @@ icons_mixin(path='')
 
 		&.is-pause
 			clip-path:url(path + '#pause-path')
+
+		& rect, & g
+			clip-path inherit
+
+		&.is-inset-shadow g
+			filter: url(path + '#inset-shadow')

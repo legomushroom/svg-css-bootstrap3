@@ -1,0 +1,41 @@
+.icons_mixin (@path: ''){
+	.icon{
+		width:  32px;
+		height: 32px;
+		fill: #ccc;
+
+		&:hover{
+			fill:#bbb;
+			cursor:pointer;
+		}
+
+		&:active{
+			fill:#ccc
+		}
+			
+		&.is-check{
+			fill:#FE4365;
+		}
+		@iconPath1: '@{path}#heart-path';
+		&.is-heart{
+			clip-path:url(@iconPath1);
+		}
+		@iconPath2:  '@{path}#play-path';
+		&.is-play{
+			clip-path:url(@iconPath2);
+		}
+			
+		@iconPath3: '@{path}#pause-path';
+		&.is-pause{
+			clip-path:url(@iconPath3);
+		}
+
+		@filterPath: '@{path}#inset-shadow';
+		&.is-inset-shadow g{
+			filter: url(@filterPath)
+		}
+		& rect, & g{
+			clip-path: inherit;
+		}
+	}
+}

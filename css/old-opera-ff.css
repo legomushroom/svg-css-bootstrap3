@@ -13,19 +13,15 @@
 .icon.is-check {
   fill: #FE4365;
 }
-.icon.is-heart {
+.icon.is-heart rect {
   clip-path: url('icons.svg#heart-path');
 }
-.icon.is-play {
+.icon.is-play rect {
   clip-path: url('icons.svg#play-path');
 }
-.icon.is-pause {
+.icon.is-pause rect {
   clip-path: url('icons.svg#pause-path');
 }
 .icon.is-inset-shadow g {
   filter: url('icons.svg#inset-shadow');
-}
-.icon rect,
-.icon g {
-  clip-path: inherit;
 }

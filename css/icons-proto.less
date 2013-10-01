@@ -17,25 +17,22 @@
 			fill:#FE4365;
 		}
 		@iconPath1: '@{path}#heart-path';
-		&.is-heart{
+		&.is-heart rect{
 			clip-path:url(@iconPath1);
 		}
 		@iconPath2:  '@{path}#play-path';
-		&.is-play{
+		&.is-play rect{
 			clip-path:url(@iconPath2);
 		}
 			
 		@iconPath3: '@{path}#pause-path';
-		&.is-pause{
+		&.is-pause rect{
 			clip-path:url(@iconPath3);
 		}
 
 		@filterPath: '@{path}#inset-shadow';
 		&.is-inset-shadow g{
 			filter: url(@filterPath)
-		}
-		& rect, & g{
-			clip-path: inherit;
 		}
 	}
 }

@@ -3,20 +3,19 @@
   height: 32px;
   fill: #cccccc; }
   .icon:hover {
+    cursor: pointer;
     fill: #bbbbbb; }
   .icon:active {
     fill: #cccccc; }
   .icon.is-check {
     fill: #fe4365; }
-  .icon.is-heart {
+  .icon.is-heart rect {
     clip-path: url("#heart-path"); }
-  .icon.is-play {
+  .icon.is-play rect {
     clip-path: url("#play-path"); }
-  .icon.is-pause {
+  .icon.is-pause rect {
     clip-path: url("#pause-path"); }
   .icon.is-inset-shadow g {
     filter: url("#inset-shadow"); }
-  .icon rect {
-    clip-path: inherit; }
   .icon g {
     clip-path: inherit; }

@@ -13,18 +13,14 @@
 .icon.is-check {
   fill: #fe4365;
 }
-.icon.is-heart {
+.icon.is-heart rect {
   clip-path: url("icons.svg#heart-path");
 }
-.icon.is-play {
+.icon.is-play rect {
   clip-path: url("icons.svg#play-path");
 }
-.icon.is-pause {
+.icon.is-pause rect {
   clip-path: url("icons.svg#pause-path");
-}
-.icon rect,
-.icon g {
-  clip-path: inherit;
 }
 .icon.is-inset-shadow g {
   filter: url("icons.svg#inset-shadow");

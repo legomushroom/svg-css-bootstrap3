@@ -1,0 +1,27 @@
+icons_mixin(path='')
+	.icon
+		width  32px
+		height 32px
+		fill #ccc
+
+		&:hover
+			fill:#bbb
+			cursor:pointer
+
+		&:active
+			fill:#ccc
+
+		&.is-check
+			fill:#FE4365
+
+		&.is-heart rect
+			clip-path:url('/svg+css-bootstrap3/2/#heart-path')
+
+		&.is-play rect
+			clip-path:url('#play-path')
+
+		&.is-pause rect
+			clip-path:url('#pause-path')
+
+		&.is-inset-shadow g
+			filter: url('#inset-shadow')
